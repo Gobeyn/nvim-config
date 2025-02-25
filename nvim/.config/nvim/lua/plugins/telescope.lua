@@ -30,5 +30,8 @@ return {
 		vim.keymap.set("n", "<leader>fc", "<cmd>Telescope colorscheme<CR>", {}) -- Find Colorscheme
 		vim.keymap.set("n", "<leader>fw", "<cmd>Telescope spell_suggest<CR>", {}) -- Find Word
 		vim.keymap.set("n", "<leader>fb", "<cmd>Telescope current_buffer_fuzzy_find<CR>", {}) -- Find Buffer
+		vim.keymap.set("n", "<leader>fk", "<cmd>Telescope keymaps<CR>", {}) -- Find Keymap
+		vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<CR>", {}) -- Find Diagnostic
+		vim.keymap.set("n", "<leader>gd", "<cmd>tab split<CR><cmd>Telescope lsp_definitions<CR>", {}) -- Goto Definition
 	end,
 }

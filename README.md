@@ -16,6 +16,8 @@ list which plugin requires which dependencies in case not all of then are needed
 
 - [fzf](https://github.com/junegunn/fzf)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [yazi](https://github.com/sxyazi/yazi)
+- [npm](https://www.npmjs.com/)
 
 
 ## Plugins
@@ -32,33 +34,23 @@ will be installed automatically if it is not already installed.
 | [Bufferline](https://github.com/akinsho/bufferline.nvim) | Line at the top with open tabs (buffers) | None |
 | [Highlight Colors](https://github.com/brenoprata10/nvim-highlight-colors) | Display colors within buffer | None |
 | [Alpha](https://github.com/goolord/alpha-nvim) | Greeter when opening neovim without a file | None but see this [pokemon plugin](https://github.com/ColaMint/pokemon.nvim) |
-| [Dressing](https://github.com/stevearc/dressing.nvim) | Improvements on vim UI hooks | None |
 | [Render Markdown](https://github.com/MeanderingProgrammer/render-markdown.nvim) | Improvements when viewing Markdown files in Neovim | None |
 | [TODO Comments](https://github.com/folke/todo-comments.nvim) | Highlight and search todo-comments | None |
 | [Toggleterm](https://github.com/akinsho/toggleterm.nvim) | Open terminal session inside Neovim | None |
-| [Rose Pine](https://github.com/rose-pine/neovim) | Rose Pine colorschemes | None |
-| [Evergarden](https://github.com/comfysage/evergarden) | Evergarden colorschemes | None |
-| [Tokyo Night](https://github.com/folke/tokyonight.nvim) | TokyoNight colorschemes | None |
-| [Themery](https://github.com/zaldih/themery.nvim) | Colorscheme switcher | The listed colorschemes |
+| [Themery](https://github.com/zaldih/themery.nvim) | Colorscheme switcher | Various colorschemes listed in the file |
+| [Snacks](https://github.com/folke/snacks.nvim) | Quality of life features, most notably UI elements | None |
+| [Yazi](https://github.com/mikavilpas/yazi.nvim) | Yazi file explorer in Neovim | `yazi` |
+| [Mason](https://github.com/williamboman/mason.nvim) | Installer for LSP server, DAP servers, linters and formatters | None |
+| [LSP Config](https://github.com/neovim/nvim-lspconfig) | Neovim LSP client | `npm` |
+| [Neovim Completion](https://github.com/hrsh7th/nvim-cmp) | Autocompletion and snippets | None |
+| [Linter](https://github.com/mfussenegger/nvim-lint) | Linter for Neovim LSP clieant | None |
+| [Formatting](https://github.com/stevearc/conform.nvim) | Code formatter | None |
+| [Auto Pairs](https://github.com/windwp/nvim-autopairs) | Automatically add pair of bracket, quotations mark, etc. | None |
 
-## Reminders
+## Install
 
-- In the documentation of Telescope there is a section on LSP pickers where we can search for 
-    definitions and such, we should keep this in mind when doing the LSP plugins.
-- Look into styling of the buffer line.
-- Integration between highlight-colors and nvim-cmp
-- Replace dressing with snacks.nvim, as per suggestion by the author (though dressing still works).
-- Look into updating the todo-comments config (jumping between comments, quickfix list (:TodoTelescope), colors, icons, etc.)
-- Look into telescope integration for todo-comments.
-- Look into more themes to add to themery
-- Look into replacing neotree with [this](https://github.com/mikavilpas/yazi.nvim) yazi compatibly plugin.
-- Look into [this](https://github.com/michaelb/sniprun) repository which can run code snippets in place, 
-    it is advertised as a blend between jupyer-like notebooks and REPL/intepreters.
+To install this we suggest creating a symbolic link, for instance by using [GNU Stow](https://www.gnu.org/software/stow/).
+In that case one can run `stow nvim` in the repository root which will create a symbolic link with `~/.config/nvim`. 
+Be careful that a symbolic doesn't already exist! To remove the symbolic link created here 
+one can run `stow -D nvim` in the repository root.
 
-## To Do 
-
-- Do all the LSP stuff
-- Go through the [repository](https://github.com/rockerBOO/awesome-neovim) on Neovim plugins and 
-    see if there is an interesting one present that we could add.
-- IDEA: Make own plugin for getting bib entries from DOI, we already have the shell script
-    for it, maybe we can integrate it into Neovim.

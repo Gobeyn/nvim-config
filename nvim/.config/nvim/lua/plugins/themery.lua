@@ -1,6 +1,14 @@
 return {
 	"zaldih/themery.nvim",
-	dependencies = { "comfysage/evergarden", "rose-pine/neovim", "folke/tokyonight.nvim" },
+	dependencies = {
+		{ "comfysage/evergarden", opts = { variant = "hard" } },
+		"rose-pine/neovim",
+		"folke/tokyonight.nvim",
+		"Mofiqul/dracula.nvim",
+		"catppuccin/nvim",
+		"Mofiqul/vscode.nvim",
+		"nvimdev/zephyr-nvim",
+	},
 	lazy = false,
 	config = function()
 		require("themery").setup({
@@ -36,6 +44,34 @@ return {
 				{
 					name = "TokyoNight Day",
 					colorscheme = "tokyonight-day",
+				},
+				{
+					name = "Dracula",
+					colorscheme = "dracula",
+				},
+				{
+					name = "Catppuccin Latte",
+					colorscheme = "catppuccin-latte",
+				},
+				{
+					name = "Catppuccin Mocha",
+					colorscheme = "catppuccin-mocha",
+				},
+				{
+					name = "Catppuccin Macchiato",
+					colorscheme = "catppuccin-macchiato",
+				},
+				{
+					name = "Catpuccin Frappe",
+					colorscheme = "catppuccin-frappe",
+				},
+				{
+					name = "VS Code",
+					colorscheme = "vscode",
+				},
+				{
+					name = "Zephyr",
+					colorscheme = "zephyr",
 				},
 			},
 			livePreview = true,

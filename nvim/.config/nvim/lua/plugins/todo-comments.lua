@@ -11,6 +11,7 @@ return {
 		vim.keymap.set("n", "<leader>cp", function()
 			todo_comments.jump_prev()
 		end, {}) -- Comment previous
+		vim.keymap.set("n", "<leader>ct", "<cmd>TodoTelescope<CR>", {}) -- Comment Telescope
 		todo_comments.setup()
 	end,
 }
