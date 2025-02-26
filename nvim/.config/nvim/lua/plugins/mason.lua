@@ -21,13 +21,13 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
-				"lua-language-server",
+				"lua_ls",
 				"pyright",
 				"rust_analyzer",
 				"texlab",
 				"clangd",
-				"cmake-language-server",
-				"bash-language-server",
+				"cmake",
+				"bashls",
 			},
 		})
 

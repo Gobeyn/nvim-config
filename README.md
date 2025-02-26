@@ -50,7 +50,7 @@ will be installed automatically if it is not already installed.
 ## Install
 
 To install this we suggest creating a symbolic link, for instance by using [GNU Stow](https://www.gnu.org/software/stow/).
-In that case one can run `stow nvim` in the repository root which will create a symbolic link with `~/.config/nvim`. 
+In that case one can run `stow nvim -t ~` in the repository root which will create a symbolic link with `~/.config/nvim`. 
 Be careful that a symbolic doesn't already exist! To remove the symbolic link created here 
 one can run `stow -D nvim` in the repository root.
 
