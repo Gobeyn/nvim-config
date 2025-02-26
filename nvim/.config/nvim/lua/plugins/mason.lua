@@ -40,6 +40,7 @@ return {
 				"isort",
 				"stylua",
 				"clang-format",
+				"debugpy",
 			},
 		})
 	end,
