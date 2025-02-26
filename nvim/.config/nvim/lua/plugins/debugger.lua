@@ -82,8 +82,11 @@ return {
 			numhl = "DiagnosticSignWarn",
 		})
 
-		vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, {})
-		vim.keymap.set("n", "<leader>dc", dap.continue, {})
-		vim.keymap.set("n", "<leader>dq", dap.terminate, {})
+		vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, {}) -- Debugger Breakpoint
+		vim.keymap.set("n", "<leader>dc", dap.continue, {}) -- Debugger Continue
+		vim.keymap.set("n", "<leader>dq", dap.terminate, {}) -- Debugger Quit
+		vim.keymap.set("n", "<leader>di", dap.step_into, {}) -- Debugger Into
+		vim.keymap.set("n", "<leader>dn", dap.step_over, {}) -- Debugger Next
+		vim.keymap.set("n", "<leader>do", dap.step_out, {}) -- Debugger Out
 	end,
 }
