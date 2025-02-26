@@ -50,11 +50,16 @@ will be installed automatically if it is not already installed.
 | [Auto Pairs](https://github.com/windwp/nvim-autopairs) | Automatically add pair of bracket, quotations mark, etc. | None |
 
 
-
 ## Install
 
 To install this we suggest creating a symbolic link, for instance by using [GNU Stow](https://www.gnu.org/software/stow/).
 In that case one can run `stow nvim -t ~` in the repository root which will create a symbolic link with `~/.config/nvim`. 
 Be careful that a symbolic doesn't already exist! To remove the symbolic link created here 
 one can run `stow -D nvim` in the repository root.
+
+## Notes on Debugger
+
+In order to use the debugger for a `C` program, it must first be compiled with the `-ggdb` flag 
+(at least with `gcc`), one can then set breakpoints in the original source files. When the 
+debugger is opened, a prompt pops up asking for the path to the executable.
 
