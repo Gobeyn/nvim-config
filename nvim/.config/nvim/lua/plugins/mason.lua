@@ -37,6 +37,7 @@ return {
 				"pylint",
 				"prettier",
 				"black",
+				"isort",
 				"stylua",
 				"clang-format",
 			},

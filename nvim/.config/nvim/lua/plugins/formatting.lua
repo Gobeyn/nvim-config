@@ -12,7 +12,7 @@ return {
 				yaml = { "prettier" },
 				-- markdown = { "prettier" },
 				lua = { "stylua" },
-				python = { "black" },
+				python = { "isort", "black" },
 				c = { "clang-format" },
 				cpp = { "clang-format" },
 			},
