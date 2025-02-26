@@ -18,6 +18,14 @@ return {
 		})
 
 		dap_py.setup("~/.local/share/nvim/mason/packages/debugpy/venv/bin/python3")
+		dap.configurations.python = {
+			{
+				type = "python",
+				request = "launch",
+				name = "Launch file",
+				program = "${file}",
+			},
+		}
 
 		dap.listeners.before.attach.dapui_config = function()
 			dapui.open()
