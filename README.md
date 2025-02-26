@@ -18,6 +18,7 @@ list which plugin requires which dependencies in case not all of then are needed
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 - [yazi](https://github.com/sxyazi/yazi)
 - [npm](https://www.npmjs.com/)
+- [gdp](https://sourceware.org/gdb/)
 
 
 ## Plugins
@@ -45,7 +46,10 @@ will be installed automatically if it is not already installed.
 | [Neovim Completion](https://github.com/hrsh7th/nvim-cmp) | Autocompletion and snippets | None |
 | [Linter](https://github.com/mfussenegger/nvim-lint) | Linter for Neovim LSP clieant | None |
 | [Formatting](https://github.com/stevearc/conform.nvim) | Code formatter | None |
+| [Debugging](https://github.com/mfussenegger/nvim-dap) | Debug Adapter Protocol (DAP) client | `gdb` |
 | [Auto Pairs](https://github.com/windwp/nvim-autopairs) | Automatically add pair of bracket, quotations mark, etc. | None |
+
+
 
 ## Install
 

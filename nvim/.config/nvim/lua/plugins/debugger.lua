@@ -17,6 +17,7 @@ return {
 			commented = true,
 		})
 
+		-- Python Debugger Setup
 		dap_py.setup("~/.local/share/nvim/mason/packages/debugpy/venv/bin/python3")
 		dap.configurations.python = {
 			{
@@ -24,6 +25,26 @@ return {
 				request = "launch",
 				name = "Launch file",
 				program = "${file}",
+			},
+		}
+
+		-- C Debugger Setup
+		dap.adapters.gdb = {
+			type = "executable",
+			command = "gdb",
+			args = { "--interpreter=dap", "--eval-command", "set print pretty on" },
+		}
+
+		dap.configurations.c = {
+			{
+				name = "Launch",
+				type = "gdb",
+				request = "launch",
+				program = function()
+					return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+				end,
+				cwd = "${workspaceFolder}",
+				stopAtBeginningOfMainSubprogram = false,
 			},
 		}
 
